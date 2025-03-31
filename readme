@@ -1,1 +1,26 @@
 Repository for springboot demo projects
+
+Steps to install and run kafka server
+
+Step-1: Download and unzip : https://kafka.apache.org/downloads
+
+Step-2 : Set Environmental Variables (HOME nad Path)
+
+Step-3: Edit the properties file:
+  i)  zookeeper.peroperties = dataDir=C:/kafka/tmp/zookeeper
+  ii) server.properties  = log.dirs=C:/kafka/config/tmp/kafka-logs
+
+Step-4: Start zookeeper 
+ .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+Step-5: Start a kafka broker
+ .\bin\windows\kafka-server-start.bat .\config\server.properties
+
+Step-6: Check kafka services 
+  jps
+
+Step-7: Stop zookeeper 
+.\bin\windows\zookeeper-server-stop.bat
+
+Step-8: Stop kafka service 
+.\bin\windows\kafka-server-stop.bat

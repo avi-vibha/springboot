@@ -24,3 +24,7 @@ Step-7: Stop zookeeper
 
 Step-8: Stop kafka service 
 .\bin\windows\kafka-server-stop.bat
+
+
+To read events from kafka topic 
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic topic_001 --from-beginning

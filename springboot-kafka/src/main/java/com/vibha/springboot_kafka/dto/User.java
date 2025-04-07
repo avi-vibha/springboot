@@ -9,6 +9,7 @@ public class User {
     public int getId() {
         return id;
     }
+    
     public void setId(int id) {
         this.id = id;
     }
@@ -24,5 +25,10 @@ public class User {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     } 
+
+    @Override
+    public String toString() {
+        return "User [firstName=" + firstName + ", lastName=" + lastName + "]";
+    }
 
 }
